@@ -1,0 +1,141 @@
+.navbarContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  color: black;
+
+  flex-direction: column;
+  align-items: center;
+  background-color: #207fe4;
+}
+.navInput {
+  display: flex;
+  justify-content: center;
+}
+.navbarContainer input {
+  width: 70%;
+
+  margin-top: 1em;
+  border-radius: 10px;
+  padding: 0.5em;
+  border: none;
+}
+.navbarContainer ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.navbarContainer ul li {
+  margin-right: 10px;
+
+  list-style: none;
+}
+
+.homeNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeNav h2 {
+  margin-bottom: 10px;
+  color: #207fe4;
+}
+.homeNav button {
+  background-color: rgb(208, 165, 10);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: small;
+  width: 100%;
+
+  color: black;
+}
+
+.homeNavMiddle {
+  width: 33%;
+}
+.todayAndEdit {
+  display: flex;
+  align-items: center;
+}
+
+.todayAndEdit h2 {
+  margin-right: auto;
+}
+.todayAndEdit button {
+  font-size: medium;
+  background-color: #197ce6;
+  border-radius: 10px;
+  border: none;
+  width: fit-content;
+  height: 20px;
+}
+.calorieDiv {
+  background-color: rgb(50, 50, 50);
+  padding: 10px;
+}
+.calorieSplit {
+  display: flex;
+  align-items: center;
+}
+.calorieSplit ul {
+  list-style: none;
+}
+.calorieSplit ul li {
+  margin: 10px;
+}
+.stepsAndExercise {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-evenly;
+
+  padding: 10px;
+}
+.stepsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stepsDiv img {
+  margin-right: 10px;
+}
+.exerciseDiv {
+  align-items: center;
+  display: flex;
+}
+.exerciseDiv h4 {
+  margin-right: 10px;
+}
+.stepsChild {
+  background-color: rgb(50, 50, 50);
+  padding: 1em;
+  border-radius: 5px;
+}
+.exerciseChild {
+  display: flex;
+  background-color: rgb(50, 50, 50);
+
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 1em;
+}
+.space {
+  margin: 10px;
+}
+.weightChart {
+  padding: 1em;
+  background-color: rgb(50, 50, 50);
+  border-radius: 5px;
+}
+
+.weightChild {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.weightChild h4 {
+  margin-right: 10px;
+}
