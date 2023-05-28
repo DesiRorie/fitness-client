@@ -1,4 +1,5 @@
 import React from "react";
+import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 
 const HomeContent = () => {
   return (
@@ -32,7 +33,7 @@ const HomeContent = () => {
         <div className="stepsChild space">
           <h4>Steps</h4>
           <div className="stepsDiv">
-            <img src="" alt="shoe" />
+            <DirectionsRunIcon />
             <p>Conect to track your steps</p>
           </div>
         </div>

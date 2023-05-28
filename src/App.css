@@ -51,6 +51,7 @@
   border-radius: 10px;
   padding: 5px;
   font-size: small;
+  font-weight: bold;
   width: 100%;
 
   color: black;
@@ -116,14 +117,19 @@
   background-color: rgb(50, 50, 50);
   padding: 1em;
   border-radius: 5px;
+  min-width: 30%;
+  max-width: 40%;
 }
 .exerciseChild {
   display: flex;
   background-color: rgb(50, 50, 50);
+  min-width: 30%;
+  max-width: 40%;
 
   flex-direction: column;
   border-radius: 5px;
   padding: 1em;
+  /* min-width: 50%; */
 }
 .space {
   margin: 10px;
