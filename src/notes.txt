@@ -1,0 +1,7 @@
+Add state that tracks remaining calorie goal.
+Add Weight Goal.
+Add Notification onclick route.
+Add profile onClick route.
+Add free trial route.
+Add edit goals button.
+Add base goal.
