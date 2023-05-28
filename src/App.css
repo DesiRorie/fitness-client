@@ -70,6 +70,7 @@
 .todayAndEdit button {
   font-size: medium;
   background-color: #197ce6;
+  color: white;
   border-radius: 10px;
   border: none;
   width: fit-content;
