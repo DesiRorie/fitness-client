@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeContent = () => {
   return (
-    <div>
+    <div className="homeContent">
       <div className="todayAndEdit">
         <h2>Today</h2>
         <button>Edit</button>

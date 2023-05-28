@@ -33,7 +33,9 @@
 
   list-style: none;
 }
-
+.homeContent {
+  margin-bottom: 10em;
+}
 .homeNav {
   display: flex;
   justify-content: space-between;
