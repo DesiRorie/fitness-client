@@ -1,16 +1,23 @@
 import React from "react";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
+import { useSelector } from "react-redux";
+import SetGoals from "../pages/SetGoals";
+useSelector;
 
 const HomeContent = () => {
+  const username = useSelector((state) => {
+    return state.user.value.username;
+  });
   return (
     <div className="homeContent">
+      <SetGoals />
       <div className="todayAndEdit">
-        <h2>Today</h2>
+        <h2>{username}'s goal for today</h2>
         <button>Edit</button>
       </div>
       <div className="calorieDiv">
         <h3>Calories</h3>
-        <p>Remaining = Goal - Food + Exercise</p>
+        <p style={{ color: "#888" }}>Remaining = Goal - Food + Exercise</p>
         <div className="calorieSplit">
           <div>
             <span>insert remaing </span>

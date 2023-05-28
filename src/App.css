@@ -149,3 +149,20 @@
 .weightChild h4 {
   margin-right: auto;
 }
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50vh;
+}
+
+.loginDiv form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.greetingDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
