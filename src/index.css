@@ -20,6 +20,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+ul a:visited {
   color: black !important;
 }
