@@ -5,12 +5,12 @@ import SetGoals from "../pages/SetGoals";
 useSelector;
 
 const HomeContent = () => {
+  const goal = useSelector((state) => state.goal);
   const username = useSelector((state) => {
     return state.user.value.username;
   });
   return (
     <div className="homeContent">
-      <SetGoals />
       <div className="todayAndEdit">
         <h2>{username}'s goal for today</h2>
         <button>Edit</button>
@@ -20,18 +20,15 @@ const HomeContent = () => {
         <p style={{ color: "#888" }}>Remaining = Goal - Food + Exercise</p>
         <div className="calorieSplit">
           <div>
-            <span>insert remaing </span>
+            <span>{goal} </span>
             <span>remaining</span>
           </div>
           <div>
             <ul>
               <li>
-                Base Goal <span>insert goal</span>
+                Base Goal <span>{goal}</span>
               </li>
-              <li>
-                Food <span>insert amount food</span>
-              </li>
-              <li>Exercise</li>
+              <li></li>
             </ul>
           </div>
         </div>

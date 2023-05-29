@@ -9,12 +9,22 @@ const LoginPage = () => {
   const username = useSelector((state) => {
     return state.user.value.username;
   });
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter" && !isButtonDisabled) {
+      dispatch(
+        login({
+          username: newUsername,
+        })
+      );
+    }
+  };
   const dispatch = useDispatch();
   return (
     <div className="loginDiv">
       <h1>Login</h1>
       <form>
         <input
+          onKeyPress={handleKeyPress}
           onChange={(e) => {
             setNewUsername(e.target.value);
           }}

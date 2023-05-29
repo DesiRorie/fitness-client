@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BottomNav = () => {
   return (
@@ -9,8 +10,13 @@ const BottomNav = () => {
       </div>
 
       <ul>
-        <li>Dashboard</li>
-        <li>Diary</li>
+        <Link to="/">
+          <li>Dashboard</li>
+        </Link>
+
+        <Link to="diary">
+          <li>Diary</li>
+        </Link>
         <li>Newsfeed</li>
         <li>Plans</li>
         <li>More</li>

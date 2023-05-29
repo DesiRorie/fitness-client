@@ -16,3 +16,10 @@ li:hover {
   cursor: pointer;
   transition: 0.5s;
 }
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}

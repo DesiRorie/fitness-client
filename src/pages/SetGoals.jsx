@@ -16,7 +16,7 @@ const SetGoals = () => {
   return (
     <div>
       <div className="greetingDiv">
-        <h2>Hello {username}, set your daily goals.</h2>
+        <h2>Hello {username}, set your daily goal.</h2>
         <label htmlFor="">Calorie Intake</label>
         <input
           onChange={(e) => setNewGoal(e.target.value)}
@@ -25,7 +25,6 @@ const SetGoals = () => {
         />
         <button onClick={handleSetGoal}>set goal</button>
       </div>
-      {goal}
     </div>
   );
 };

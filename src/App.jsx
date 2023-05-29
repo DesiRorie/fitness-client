@@ -6,9 +6,12 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import { useSelector } from "react-redux";
 import LoginPage from "./pages/LoginPage";
+import SetGoals from "./pages/SetGoals";
+import Diary from "./pages/Diary";
 
 function App() {
   const check = useSelector((state) => state.user.value.check);
+  const goal = useSelector((state) => state.goal);
 
   return (
     <>
@@ -18,7 +21,14 @@ function App() {
         <>
           <BottomNav />
           <Routes>
-            <Route path="/" element={<Homepage />} />
+            {!goal ? (
+              <Route path="/" element={<SetGoals />} />
+            ) : (
+              <>
+                <Route path="/" element={<Homepage />} />
+              </>
+            )}
+            <Route path="diary" element={<Diary />} />
           </Routes>
         </>
       )}
