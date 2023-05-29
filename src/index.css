@@ -22,6 +22,6 @@ a {
 .linkStyle:visited {
   color: black !important;
 }
-a:visited {
+a.linkStyle:visited {
   color: black !important;
 }
