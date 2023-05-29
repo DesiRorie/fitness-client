@@ -10,11 +10,11 @@ const BottomNav = () => {
       </div>
 
       <ul>
-        <Link className="linkStyle" to="/">
+        <Link id="link" className="linkStyle" to="/">
           <li>Dashboard</li>
         </Link>
 
-        <Link className="linkStyle" to="diary">
+        <Link id="link" className="linkStyle" to="diary">
           <li>Diary</li>
         </Link>
         <li>Newsfeed</li>
