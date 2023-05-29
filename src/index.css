@@ -19,7 +19,6 @@ li:hover {
 a {
   text-decoration: none;
 }
-
-ul a:visited {
+.linkStyle:visited {
   color: black !important;
 }
