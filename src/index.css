@@ -3,6 +3,7 @@
   color: #eeeeee;
   font-family: "Roboto", sans-serif;
   background-color: #222831;
+  box-sizing: border-box;
 }
 
 button:hover {

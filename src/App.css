@@ -77,14 +77,23 @@
   width: fit-content;
   height: 20px;
 }
+.calorieParent {
+  /* width: 825px; */
+  margin: auto;
+}
+.calorieChildren {
+  padding: 1em;
+  width: 100%;
+}
 .calorieDiv {
   background-color: rgb(50, 50, 50);
-  padding: 10px;
+
   border-radius: 10px;
 }
 .calorieSplit {
   display: flex;
   align-items: center;
+  padding: 1em;
 }
 .calorieSplit ul {
   list-style: none;
@@ -96,8 +105,10 @@
   display: flex;
   margin-top: 1em;
   justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 1em;
 
-  padding: 10px;
+  /* padding: 10px; */
 }
 .stepsDiv {
   display: flex;
@@ -107,19 +118,12 @@
 .stepsDiv img {
   margin-right: 10px;
 }
-.exerciseDiv {
-  align-items: center;
-  display: flex;
-}
-.exerciseDiv h4 {
-  margin-right: 10px;
-}
+
 .stepsChild {
   background-color: rgb(50, 50, 50);
   padding: 1em;
   border-radius: 5px;
-  min-width: 30%;
-  max-width: 40%;
+  width: 100%;
 }
 .exerciseChild {
   display: flex;
@@ -147,7 +151,11 @@
   flex-direction: row;
 }
 .weightChild h4 {
-  margin-right: auto;
+  margin-right: 5px;
+}
+.loginBox {
+  width: 20%;
+  text-align: center;
 }
 .loginDiv {
   display: flex;
@@ -168,4 +176,29 @@
   justify-content: center;
   gap: 10px;
   margin-top: 50vh;
+}
+@media screen and (min-width: 1024px) {
+  .stepsAndExercise {
+    width: 825px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding: 10px; */
+  }
+  .stepsChild {
+    padding: 16px;
+  }
+  .calorieDiv {
+    width: 825px;
+    margin-left: auto;
+    padding: 0px;
+    margin-right: auto;
+  }
+  .weightChart {
+    width: 825px;
+    padding: 0px;
+
+    margin: auto;
+  }
 }
